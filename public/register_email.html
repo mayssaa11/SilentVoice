@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | SilentVoice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/register_email.css" />
+    <link rel="shortcut icon" href="./logo.jpeg">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 class="title">Create your account</h1>
+            <form id="register-form">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="you@example.com" required />
+
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Choose a username" required />
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Create a password" required />
+
+                <label for="confirm">Confirm Password</label>
+                <input type="password" id="confirm" placeholder="Repeat password" required />
+
+                <button type="submit">Register</button>
+                <p class="signin-link">Already have an account? <a href="signin.html">Sign In</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("register-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const pass = document.getElementById("password").value;
+            const confirm = document.getElementById("confirm").value;
+            if (pass !== confirm) {
+                alert("Passwords do not match!");
+                return;
+            }
+            alert("Account created successfully!");
+        });
+    </script>
+    <script type="module" src="/js/auth.js"></script>
+    <script type="module" src="/js/register-email.js"></script>
+</body>
+
+</html>

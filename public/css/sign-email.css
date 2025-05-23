@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7efe2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  text-align: center;
+}
+
+.form-box {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 350px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  color: #af5b0d;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  align-items: center;
+  /* Centrer les éléments du formulaire */
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 2px solid #e7be90;
+  /* Augmenter l'épaisseur de la bordure */
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f7d2a3;
+  outline: none;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #af5b0d;
+  /* Couleur de la bordure lors du focus */
+  background-color: #f0c29b;
+  /* Couleur de fond lors du focus */
+}
+
+label {
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+  color: #666;
+  width: 100%;
+}
+
+.password-box {
+  position: relative;
+  width: 100%;
+}
+
+.toggle-password {
+  font-size: 18px;
+  /* Augmenter la taille de l'icône */
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #111;
+}
+
+.links {
+  font-size: 12px;
+}
+
+.sign-in-btn {
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.back-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #111;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #666;
+}

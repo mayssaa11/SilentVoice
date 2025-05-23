@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Space</title>
+    <link rel="stylesheet" href="./css/learning.css">
+    <link rel="shortcut icon" href="./logo.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="parti_haut">
+        <!-- Partie Gauche : Logo + Navigation -->
+        <div class="header-left">
+            <div class="partie_logo">
+                <img class="img_logo" src="./logo.jpeg" alt="logo">
+                <h1>SilentVoice</h1>
+                <!-- Menu Navigation  -->
+                <nav class="main-nav">
+                    <ul class="menu">
+                        <a class="trs" href="./home.html">Home</a>
+                        <a class="trs" href="./ASL-translator.html">ASL translator</a>
+                        <a class="learn" href="./learning.html">Learning Space</a>
+                        <a class="hh" href="./today_sign.html">Today's sign</a>
+                    </ul>
+                </nav>
+                <!-- Partie Droite : Search + Auth -->
+                <div class="kaggle-search">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Search ...">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Learning Space</h1>
+        <div class="levels">
+            <button onclick="showContent('beginner')">Niveau Débutant</button>
+            <button onclick="showContent('intermediate')">Niveau Intermédiaire</button>
+            <button onclick="showContent('advanced')">Niveau Avancé</button>
+        </div>
+        <div id="beginner-wrapper" class="level-wrapper">
+            <div id="beginner" class="level-content">
+                <h2>Niveau Débutant</h2>
+                <ul>
+                    <li>Alphabet (A-Z)</li>
+                    <li>Chiffres (1-10)</li>
+                    <li>Salutations : Bonjour, Merci, Oui, Non</li>
+                    <li>Présenter son prénom : “Je m'appelle...”</li>
+                </ul>
+                <button class="start-btn" onclick="alert('Début du niveau débutant !')">start now</button>
+            </div>
+            <div class="image-container">
+                <img src="./debut.jpeg" alt="Image du niveau débutant">
+            </div>
+        </div>
+
+        <div id="intermediate-wrapper" class="level-wrapper" style="display: none;">
+            <div id="intermediate" class="level-content">
+                <h2>Niveau Intermédiaire</h2>
+                <ul>
+                    <li>Questions simples : Où ? Quand ? Comment ?</li>
+                    <li>Famille, couleurs, nourriture</li>
+                    <li>Exemples : “Où est la salle ?”, “J'aime les pommes.”</li>
+                </ul>
+                <button class="start-btn" onclick="alert('Début du niveau intermédiaire !')">start now</button>
+            </div>
+            <div class="image-container">
+                <img src="./interm.jpg" alt="Image du niveau intermédiaire">
+            </div>
+        </div>
+
+        <div id="advanced-wrapper" class="level-wrapper" style="display: none;">
+            <div id="advanced" class="level-content">
+                <h2>Niveau Avancé</h2>
+                <ul>
+                    <li>Dialogues complexes</li>
+                    <li>Expressions du quotidien</li>
+                    <li>Jeux ou défis de compréhension</li>
+                </ul>
+                <button class="start-btn" onclick="alert('Début du niveau avancé !')">start now</button>
+            </div>
+            <div class="image-container">
+                <img src="./advc.webp" alt="Image du niveau avancé">
+            </div>
+        </div>
+
+
+        <script>
+            function showContent(levelId) {
+                const allWrappers = ["beginner-wrapper", "intermediate-wrapper", "advanced-wrapper"];
+                allWrappers.forEach(id => {
+                    document.getElementById(id).style.display = "none";
+                });
+
+                document.getElementById(levelId + "-wrapper").style.display = "flex";
+            }
+        </script>
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="./faq.html">FAQ</a>
+            <a href="#about-us">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+        <section id="about-us">
+            <h2 class="section-title">About Us</h2>
+            <p>
+                We're two passionate software engineering students committed to using technology to bridge communication
+                gaps. With a shared interest in creating inclusive solutions, we've built this web app to make American
+                Sign Language more accessible and easier to learn for everyone. Our goal is to empower individuals
+                through innovation, making communication seamless for all.
+            </p>
+        </section>
+    </footer>
+    <script src="./app.js"></script>
+    <script type="module" src="/js/auth.js"></script>
+    <script type="module" src="/js/firestore.js"></script>
+    <script type="module" src="/js/learning.js"></script>
+</body>
+
+</html>

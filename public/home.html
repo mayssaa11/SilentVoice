@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SilentVoice - Page d'accueil</title>
+    <!-- Ajout de Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./logo.jpeg">
+</head>
+
+<body>
+    <header class="parti_haut">
+        <!-- Partie Gauche : Logo + Navigation -->
+        <div class="header-left">
+            <div class="partie_logo">
+                <img class="img_logo" src="./logo.jpeg" alt="logo">
+                <h1>SilentVoice</h1>
+                <!-- Menu Navigation  -->
+                <nav class="main-nav">
+                    <ul class="menu">
+                        <a class="trs" href="./home.html">Home</a>
+                        <a class="trs" href="./ASL-translator.html">ASL translator</a>
+                        <a class="learn" href="./learning.html">Learning Space</a>
+                        <a class="hh" href="./today_sign.html">Today's sign</a>
+                    </ul>
+                </nav>
+                <!-- Partie Droite : Search-->
+                <div class="kaggle-search">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Search ...">
+                </div>
+                <!-- Partie Droite : Auth Section -->
+                <div class="auth-container">
+                    <!-- When not logged in -->
+                    <div id="guest-content">
+                    <a href="./signin.html" class="sign-in-btn">Sign in</a>
+                    <a href="./register.html" class="register-btn">Register</a>
+                    </div>
+                    <!-- When logged in -->
+                    <div id="logged-in-content" style="display: none;">
+                    <span id="welcome" class="welcome-text"></span>
+                    <button id="logout-btn" class="logout-btn">Sign out</button>
+                    </div>           
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <!-- Conteneur principal pour le texte ET l'image (au même niveau) -->
+            <div class="hero-content">
+                <h1>SilentVoice</h1>
+                <h2>Where hands speaks louder than words</h2>
+                <p>
+                    Imagine a world where conversations flow seamlessly between gestures and words.
+                    With SilentVoice, every sign becomes a voice_instantly translated into clear text and natural
+                    speech.
+                    Empower your connections, break communication barriers, and let every hand movement be heard.
+                </p>
+                <div class="auth-container">
+                    <a href="./register_email.html" class="sign-in-btn">register with email</a>
+                    <a href="./register-gg.html" class="register-btn">Register with google</a>
+                </div>
+            </div>
+
+            <!-- Déplacer .hero-image à l'extérieur de .hero-content -->
+            <div class="hero-image">
+                <img src="./homeImg.jpeg" alt="Illustration of sign language" />
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="./faq.html">FAQ</a>
+            <a href="#about-us">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+        <section id="about-us">
+            <h2 class="section-title">About Us</h2>
+            <p>
+                We're two passionate software engineering students committed to using technology to bridge communication
+                gaps. With a shared interest in creating inclusive solutions, we've built this web app to make American
+                Sign Language more accessible and easier to learn for everyone. Our goal is to empower individuals
+                through innovation, making communication seamless for all.
+            </p>
+        </section>
+    </footer>
+    
+    <script src="./app.js"></script>
+    <script type="module" src="/js/auth.js"></script>
+    <script type="module" src="/js/home.js"></script>
+</body>
+
+</html>

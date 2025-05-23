@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's sign</title>
+    <link rel="stylesheet" href="./css/today_sign.css">
+    <link rel="shortcut icon" href="./logo.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="parti_haut">
+        <!-- Partie Gauche : Logo + Navigation -->
+        <div class="header-left">
+            <div class="partie_logo">
+                <img class="img_logo" src="./logo.jpeg" alt="logo">
+                <h1>SilentVoice</h1>
+                <!-- Menu Navigation  -->
+                <nav class="main-nav">
+                    <ul class="menu">
+                        <a class="trs" href="./home.html">Home</a>
+                        <a class="trs" href="./ASL-translator.html">ASL translator</a>
+                        <a class="learn" href="./learning.html">Learning Space</a>
+                        <a class="hh" href="./today_sign.html">Today's sign</a>
+                    </ul>
+                </nav>
+                <!-- Partie Droite : Search + Auth -->
+                <div class="kaggle-search">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Search ...">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>
+            Ready to learn something powerful today?
+        </h1>
+        <h2>Discover the sign of the day and boost your sign language skills!</h2>
+
+        <div class="hh" style="text-align: center; margin-top: 30px;">
+            <button onclick="showSign()"
+                style="padding: 10px 20px; font-size: 18px; border-radius: 10px; background-color: #bd6014; color: white; border: none; cursor: pointer;">
+                Discover
+            </button>
+        </div>
+
+        <div class="translate" id="sign-container"
+            style="display: none; margin-top: 40px; display: flex; justify-content: center; align-items: center; gap: 40px;">
+            <div style="max-width: 400px;">
+                <h3>Today's Sign</h3>
+                <p style="font-size: 18px;">"stay strong and unique" - in sign language</p>
+            </div>
+            <div>
+                <video width="300" controls>
+                    <source src="./today_sign.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <script>
+            function showSign() {
+                const container = document.getElementById("sign-container");
+                container.style.display = "flex";
+
+                // Scroll to the bottom of the page smoothly
+                container.scrollIntoView({ behavior: "smooth" });
+            }
+        </script>
+
+    </main>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="./faq.html">FAQ</a>
+            <a href="#about-us">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+        <section id="about-us">
+            <h2 class="section-title">About Us</h2>
+            <p>
+                We're two passionate software engineering students committed to using technology to bridge communication
+                gaps. With a shared interest in creating inclusive solutions, we've built this web app to make American
+                Sign Language more accessible and easier to learn for everyone. Our goal is to empower individuals
+                through innovation, making communication seamless for all.
+            </p>
+        </section>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>

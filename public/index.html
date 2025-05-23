@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <link rel="shortcut icon" href="./logo.jpeg">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+    <div>
+        <img class="logo" src="./logo.jpeg" alt="logo">
+        <h1>SilentVoice</h1>
+    </div>
+    <div>
+        <p>Where hands speak louder than words</p>
+    </div>
+    <div class="bubble-container">
+        <div class="bubble"></div>
+        <div class="bubble delay1"></div>
+        <div class="bubble delay2"></div>
+    </div>
+    <script>
+        // Rediriger vers "home.html" après 5 secondes
+        setTimeout(function () {
+            window.location.href = "./home.html";
+        }, 5000); // 5000 millisecondes = 5 secondes
+    </script>
+
+</body>
+
+</html>

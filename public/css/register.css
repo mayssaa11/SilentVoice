@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.register-card h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #994309;
+}
+
+.google-button {
+    background-color: white;
+    border: 1px solid #ebb06d;
+    padding: 12px;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.google-button:hover {
+    background-color: #f3ba78;
+}
+
+.google-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.divider {
+    margin: 25px 0;
+    position: relative;
+    text-align: center;
+    color: #e0b072;
+    font-size: 13px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #e9b07a;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.email-button {
+    background-color: #ce5d11;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.email-button:hover {
+    background-color: #a15309;
+}
+
+.signin-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signin-link a {
+    color: #b35b09;
+    text-decoration: none;
+    font-weight: 500;
+}

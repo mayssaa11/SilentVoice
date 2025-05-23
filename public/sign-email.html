@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./css/sign-email.css" />
+    <link rel="shortcut icon" href="./logo.jpeg">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="form-box">
+            <h1 class="logo">SilentVoice</h1>
+            <h2>Sign In</h2>
+            <form>
+                <label for="email">EMAIL / USERNAME *</label>
+                <input type="email" id="email" placeholder="example@gmail.com" required />
+                <label for="password">PASSWORD *</label>
+                <div class="password-box">
+                    <input type="password" id="password" required />
+                    <span class="toggle-password">👁️</span>
+                </div>
+                <div class="links">
+                    <a href="#">Forgot Username</a> or <a href="#">Password</a>
+                </div>
+                <button type="submit" class="sign-in-btn">Sign In</button>
+            </form>
+            <div class="back-link">
+                <a href="./signin.html">← Back</a>
+            </div>
+        </div>
+        <footer>
+            <a href="./contact.html">Contact Us</a>
+        </footer>
+    </div>
+    <script src="./scriptauth.js"></script>
+    <script type="module" src="/js/auth.js"></script>
+    <script type="module" src="/js/sign-email.js"></script>
+</body>
+
+</html>

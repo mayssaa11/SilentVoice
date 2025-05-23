@@ -1,0 +1,272 @@
+body {
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    padding-top: 20%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    /* pour rester au-dessus des autres éléments */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* optionnel, effet d’ombre */
+}
+
+.partie_logo {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.img_logo {
+    margin-left: 30px;
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+
+}
+
+/* Groupe Titre + MA */
+.partie_logo {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.partie_logo h1 {
+    font-size: 20px;
+    color: #c06109;
+    margin: 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: white;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+/* Menu central */
+.nav-menu {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #080808;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-right: 20%;
+}
+
+.nav-menu a:hover {
+    color: #c05f05;
+}
+
+.kaggle-search {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 20px;
+    padding: 8px 15px;
+    width: 500px;
+    height: 28px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.kaggle-search i {
+    color: #777;
+    margin-right: 30px;
+}
+
+.kaggle-search input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.main-nav {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: coral;
+}
+
+.main-nav .menu {
+    display: flex;
+    gap: 20px;
+    /* espace de 20px entre chaque lien */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav .menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: smaller;
+}
+
+.main-nav .menu a {
+    color: #837d7a;
+    /* bleu par exemple */
+}
+
+.main-nav .menu a:hover {
+    color: #af630b;
+    /* passe au noir au survol */
+}
+
+#faq {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#faq .section-title {
+    font-size: 2rem;
+    color: #cf8d12;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    color: #cc7a00;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .header-left {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #faq {
+        padding: 10px;
+    }
+
+    .faq-item {
+        padding: 10px;
+    }
+}
+
+
+footer {
+    margin-top: auto;
+    background-color: #c77029;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: beige;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f3b275;
+    /* ou une autre couleur d’accent */
+}
+
+#about-us {
+    background-color: #fff5e6;
+    /* une couleur douce pour le distinguer */
+    padding: 60px 20px;
+    border-top: 3px solid #ffa500;
+    /* ou #af5b0d si tu veux rester cohérent avec ton thème */
+    margin-top: 80px;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #af5b0d;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #af5b0d;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.highlight {
+    background-color: #d4150f;
+    /* jaune clair */
+    padding: 0 2px;
+    border-radius: 2px;
+}
