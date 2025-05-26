@@ -116,33 +116,30 @@ html {
     font-size: large;
     font-weight: bold;
 }
-
+/* main  section */
 main {
     background-color: white;
+    color:#03224c;
 }
-
+h2 {
+    margin-top: 60px;
+    text-align: center;
+}
 .intro {
-    padding: 20px;
-    margin-bottom: 30px;
+    padding: 3px 200px;
+    margin-bottom: 0px;
     font-size: 16px;
     color: #03224c;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
-
-h2 {
-    color: #03224c;
-    text-align: center;
-}
-
 .translation-area {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    padding: 20px;
+    padding: 30px;
     flex-wrap: wrap;
 }
-
 .video-options,
 .translation-output {
     flex: 1;
@@ -150,44 +147,35 @@ h2 {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 0.05px solid #96989b;
+    box-shadow: 0 5px 5px   rgba(0, 0, 0, 0.281);
 }
-
-.upload-label {
-    display: inline-block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #03224c;
-    cursor: pointer;
-}
-
-#video-upload {
-    margin-bottom: 15px;
-}
-
-#start-camera {
+.button {
     background-color: #03224c;
-    color: white;
-    padding: 10px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    color: #f4d41a;
+    padding: 10px 20px; 
     border: none;
     border-radius: 6px;
     cursor: pointer;
 }
-
-.video-preview {
-    margin-top: 20px;
+#video-preview {
+    margin-top: 15px;
+    border-radius: 10px;
 }
 
 .translation-output h3 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #output-text {
     background-color: #e9edf0;
     padding: 15px;
-    border-radius: 6px;
-    min-height: 80px;
-    color: #333;
+    border: 0.05px solid #96989b;
+    border-radius: 10px;
+    min-height: 200px;
+    color: #03224c;
 }
 
 /* footer */

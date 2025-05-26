@@ -45,28 +45,27 @@
             </div>
     </header>
     <main>
+        <h2>Translate American Sign Language</h2>
         <div class="intro">
             <p>
-                Break the barriers of silence. Our ASL Translator allows you to upload a video or use your camera
-                in real-time to translate American Sign Language into text.
-                making communication smoother, faster, and
-                more inclusive.
+                Break the barriers of silence. Our ASL Translator allows you to upload a video 
+                or use your camera in real-time to translate American Sign Language into text,
+                making communication smoother, faster, and more inclusive.
             </p>
         </div>
-        <h2>Translate Sign Language</h2>
         <section class="translation-area">
             <div class="video-options">
                 <h3>translation input</h3>
-                <label for="video-upload" class="upload-label">Upload a Video</label>
+                <button id="start-camera" class="button">Use Camera</button>
+                <span>or</span>
+                <label for="video-upload" class="button">Upload a Video</label>
                 <input type="file" accept="video/*" id="video-upload" />
-                <p>OR</p>
-                <button id="start-camera">Use Camera</button>
                 <div class="video-preview">
-                    <video id="video-preview" width="400" controls></video>
+                    <video id="video-preview" width="450" controls></video>
                 </div>
             </div>
             <div class="translation-output">
-                <h3>Translation Output</h3>
+                <h3>translation Output</h3>
                 <div id="output-text">Your translated text will appear here.</div>
             </div>
         </section>
