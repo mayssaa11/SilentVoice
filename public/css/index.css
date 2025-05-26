@@ -1,5 +1,5 @@
 html {
-    background-color: #cc731f;
+    background-color: white;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: 'Arial', sans-serif;
+    font-family: Times, "Times New Roman", Georgia, serif;
 }
 
 div {
@@ -17,7 +17,7 @@ div {
 }
 
 .logo {
-    border: 0.1px solid #f3d6af;
+    border: 0.1px solid white;
     width: 150px;
     height: auto;
     margin-bottom: 20px;
@@ -25,16 +25,15 @@ div {
 }
 
 h1 {
-    font-family: cursive;
-    font-size: 40px;
-    color: #f0ebe6;
+    font-size: 50px;
+    color: #0034b7;
     margin: 10px 0;
 }
 
 p {
     font-family: cursive;
-    font-size: 18px;
-    color: #f7f0e8;
+    font-size: 26px;
+    color: #38bae1;
     margin-top: 5px;
 }
 
@@ -49,7 +48,7 @@ p {
 .bubble {
     width: 15px;
     height: 15px;
-    background-color: #ffffff;
+    background-color: #38bae1;
     border-radius: 50%;
     animation: pulse 1.5s infinite ease-in-out;
 }
