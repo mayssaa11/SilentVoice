@@ -127,6 +127,9 @@ main h1 {
     text-align: center;
     color: #03224c;
     margin-bottom: 15px;
+    font-size: 28px;
+    color: rgb(2, 2, 85);
+    margin-bottom: 20px;
 }
 
 main p {
@@ -145,7 +148,7 @@ button {
     color: #f4d41a;
     padding: 10px 20px; 
     border: none;
-    border-radius: 6px;
+    border-radius: 9px;
     cursor: pointer;
 }
 
