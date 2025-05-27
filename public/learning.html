@@ -6,18 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Space</title>
     <link rel="stylesheet" href="./css/learning.css">
-    <link rel="shortcut icon" href="./logo.jpeg">
+    <link rel="shortcut icon" href="./logo4.png">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="parti_haut">
-        <!-- Partie Gauche : Logo + Navigation -->
-        <div class="header-left">
-            <div class="partie_logo">
-                <img class="img_logo" src="./logo.jpeg" alt="logo">
+    <header>
+            <div class="header">
+                <img class="img_logo" src="./logo4.png" alt="logo">
                 <h1>SilentVoice</h1>
-                <!-- Menu Navigation  -->
+                <!-- Navigation Menu  -->
                 <nav class="main-nav">
                     <ul class="menu">
                         <a class="trs" href="./home.html">Home</a>
@@ -26,66 +24,79 @@
                         <a class="hh" href="./today_sign.html">Today's sign</a>
                     </ul>
                 </nav>
-                <!-- Partie Droite : Search + Auth -->
+                <!-- Search bar-->
                 <div class="kaggle-search">
                     <i class="fas fa-search search-icon"></i>
-                    <input type="text" id="search-input" placeholder="Search ...">
+                    <input type="text" placeholder="Search ...">
+                </div>
+                <!-- Auth Section -->
+                <div class="auth-container">
+                    <!-- When not logged in -->
+                    <div id="guest-content">
+                    <a href="./signin.html" class="sign-in-btn">Sign in</a>
+                    <a href="./register.html" class="register-btn">Register</a>
+                    </div>
+                    <!-- When logged in -->
+                    <div id="logged-in-content" style="display: none;">
+                    <span id="welcome" class="welcome-text"></span>
+                    <button id="logout-btn" class="logout-btn">Sign out</button>
+                    </div>           
                 </div>
             </div>
-        </div>
     </header>
     <main>
         <h1>Learning Space</h1>
         <div class="levels">
-            <button onclick="showContent('beginner')">Niveau Débutant</button>
-            <button onclick="showContent('intermediate')">Niveau Intermédiaire</button>
-            <button onclick="showContent('advanced')">Niveau Avancé</button>
+            <button onclick="showContent('beginner')">Beginner level</button>
+            <button onclick="showContent('intermediate')">Intermediate level</button>
+            <button onclick="showContent('advanced')">Advanced level</button>
         </div>
-        <div id="beginner-wrapper" class="level-wrapper">
-            <div id="beginner" class="level-content">
-                <h2>Niveau Débutant</h2>
-                <ul>
-                    <li>Alphabet (A-Z)</li>
-                    <li>Chiffres (1-10)</li>
-                    <li>Salutations : Bonjour, Merci, Oui, Non</li>
-                    <li>Présenter son prénom : “Je m'appelle...”</li>
-                </ul>
-                <button class="start-btn" onclick="alert('Début du niveau débutant !')">start now</button>
-            </div>
-            <div class="image-container">
-                <img src="./debut.jpeg" alt="Image du niveau débutant">
+        <div class="level-container">
+            <div id="beginner-wrapper" class="level-wrapper">
+                <div id="beginner" class="level-content">
+                    <h2>Beginner level</h2>
+                    <ul>
+                        <li>Alphabet (A-Z)</li>
+                        <li>Digits (1-10)</li>
+                        <li>Basic expressions : hello, thank you, yes, no</li>
+                        <li>Introducing your name : “My name is...”</li>
+                    </ul>
+                    <button class="start-btn" onclick="alert('Unfolding the Beginner level !')">start now</button>
+                </div>
+                <div class="image-container">
+                    <img src="./debut.jpeg" alt="Image du niveau débutant">
+                </div>
             </div>
         </div>
+            <div id="intermediate-wrapper" class="level-wrapper" style="display: none;">
+                <div id="intermediate" class="level-content">
+                    <h2>Intermediate level</h2>
+                    <ul>
+                        <li>W-H questions : where ? when ? how ?</li>
+                        <li>Vocabulary : family, colors, food</li>
+                        <li>Examples : “where is the room?”, “I love apples.”</li>
+                    </ul>
+                    <button class="start-btn" onclick="alert('Unfolding the Intermediate level !')">start now</button>
+                </div>
+                <div class="image-container">
+                    <img src="./interm.jpg" alt="Image du niveau intermédiaire">
+                </div>
+            </div>
 
-        <div id="intermediate-wrapper" class="level-wrapper" style="display: none;">
-            <div id="intermediate" class="level-content">
-                <h2>Niveau Intermédiaire</h2>
-                <ul>
-                    <li>Questions simples : Où ? Quand ? Comment ?</li>
-                    <li>Famille, couleurs, nourriture</li>
-                    <li>Exemples : “Où est la salle ?”, “J'aime les pommes.”</li>
-                </ul>
-                <button class="start-btn" onclick="alert('Début du niveau intermédiaire !')">start now</button>
+            <div id="advanced-wrapper" class="level-wrapper" style="display: none;">
+                <div id="advanced" class="level-content">
+                    <h2>Advanced level</h2>
+                    <ul>
+                        <li>Common expressions</li>
+                        <li>Engaging in a conversation</li>
+                        <li>Comprehension games and challenges</li>
+                    </ul>
+                    <button class="start-btn" onclick="alert('Unfolding the Advanced level !')">start now</button>
+                </div>
+                <div class="image-container">
+                    <img src="./advc.webp" alt="Image du niveau avancé">
+                </div>
             </div>
-            <div class="image-container">
-                <img src="./interm.jpg" alt="Image du niveau intermédiaire">
-            </div>
-        </div>
-
-        <div id="advanced-wrapper" class="level-wrapper" style="display: none;">
-            <div id="advanced" class="level-content">
-                <h2>Niveau Avancé</h2>
-                <ul>
-                    <li>Dialogues complexes</li>
-                    <li>Expressions du quotidien</li>
-                    <li>Jeux ou défis de compréhension</li>
-                </ul>
-                <button class="start-btn" onclick="alert('Début du niveau avancé !')">start now</button>
-            </div>
-            <div class="image-container">
-                <img src="./advc.webp" alt="Image du niveau avancé">
-            </div>
-        </div>
 
 
         <script>
@@ -98,10 +109,8 @@
                 document.getElementById(levelId + "-wrapper").style.display = "flex";
             }
         </script>
-
-
-
     </main>
+
     <footer class="footer">
         <div class="footer-links">
             <a href="./faq.html">FAQ</a>
@@ -110,12 +119,16 @@
         </div>
         <section id="about-us">
             <h2 class="section-title">About Us</h2>
+            <div class="photos">
+                <img src="us1.jpg" alt="us1"/>
+            </div>
             <p>
                 We're two passionate software engineering students committed to using technology to bridge communication
                 gaps. With a shared interest in creating inclusive solutions, we've built this web app to make American
                 Sign Language more accessible and easier to learn for everyone. Our goal is to empower individuals
                 through innovation, making communication seamless for all.
             </p>
+            <img class="illustration" src="img7.jpg" alt="" />
         </section>
     </footer>
     <script src="./app.js"></script>
