@@ -1,11 +1,13 @@
 body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    background-color: #f7f9fc;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    color:#03224c;
+    height: 100vh; 
 }
 
 .register-container {
@@ -16,39 +18,45 @@ body {
 }
 
 .register-card {
-    width: 100%;
-    max-width: 400px;
-    border: 1px solid #ddd;
-    padding: 40px 30px;
+    width: 300px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-    text-align: center;
+    box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dee1e8;
 }
 
 .register-card h1 {
-    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 26px;
     margin-bottom: 30px;
-    color: #994309;
+    color: #03224c;
 }
 
 .google-button {
-    background-color: white;
-    border: 1px solid #ebb06d;
-    padding: 12px;
-    border-radius: 6px;
     width: 100%;
-    font-size: 16px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+    padding: 12px;
+    margin-top: 25px;
+    background-color: #ffcc00;
+    color: #03224c;
+    padding: 8px 15px;
+    border: 1px solid #7d7979;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 6px;
+    vertical-align: middle;
     cursor: pointer;
-    transition: background 0.2s;
 }
 
 .google-button:hover {
-    background-color: #f3ba78;
+    background-color: white;
+    color:#03224c;
+    border: 1px solid #03224c;
+    font-size: large;
+    font-weight: bold;
 }
 
 .google-button img {
@@ -57,11 +65,12 @@ body {
 }
 
 .divider {
-    margin: 25px 0;
+    margin: 20px 0;
     position: relative;
     text-align: center;
-    color: #e0b072;
+    color: #03224c;
     font-size: 13px;
+    margin-bottom: 1px;
 }
 
 .divider::before,
@@ -71,7 +80,7 @@ body {
     top: 50%;
     width: 40%;
     height: 1px;
-    background: #e9b07a;
+    background: #03224c;
 }
 
 .divider::before {
@@ -81,31 +90,43 @@ body {
 .divider::after {
     right: 0;
 }
-
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+}
 .email-button {
-    background-color: #ce5d11;
-    color: white;
-    padding: 12px;
-    border-radius: 6px;
-    text-decoration: none;
-    display: inline-block;
     width: 100%;
-    font-size: 16px;
-    font-weight: 500;
-    transition: background 0.3s;
+    margin-top: 15px;
+    background-color: #ffcc00;
+    color: #03224c;
+    padding: 8px 80px;
+    border: 1px solid #7d7979;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 6px;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: center;
 }
-
 .email-button:hover {
-    background-color: #a15309;
+    background-color: white;
+    color:#03224c;
+    border: 1px solid #03224c;
+    font-size: large;
+    font-weight: bold;
 }
-
 .signin-link {
     margin-top: 20px;
     font-size: 14px;
+    text-align: center;
 }
-
 .signin-link a {
-    color: #b35b09;
+    color: #ffcc00;
     text-decoration: none;
-    font-weight: 500;
+}
+.signin-link a:hover {
+    text-decoration: underline;
 }
