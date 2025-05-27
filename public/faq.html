@@ -6,33 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASL Translator</title>
     <link rel="stylesheet" href="./css/faq.css">
-    <link rel="shortcut icon" href="./logo.jpeg">
+    <link rel="shortcut icon" href="./logo4.png">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="parti_haut">
-        <!-- Partie Gauche : Logo + Navigation -->
-        <div class="header-left">
-            <div class="partie_logo">
-                <img class="img_logo" src="./logo.jpeg" alt="logo">
+    <header>
+            <div class="header">
+                <img class="img_logo" src="./logo4.png" alt="logo">
                 <h1>SilentVoice</h1>
-                <!-- Menu Navigation  -->
+                <!-- Navigation Menu  -->
                 <nav class="main-nav">
                     <ul class="menu">
                         <a class="trs" href="./home.html">Home</a>
                         <a class="trs" href="./ASL-translator.html">ASL translator</a>
-                        <a class="learn" href="#">Learning Space</a>
-                        <a class="hh" href="#">Today's sign</a>
+                        <a class="learn" href="./learning.html">Learning Space</a>
+                        <a class="hh" href="./today_sign.html">Today's sign</a>
                     </ul>
                 </nav>
-                <!-- Partie Droite : Search + Auth -->
+                <!-- Search bar-->
                 <div class="kaggle-search">
                     <i class="fas fa-search search-icon"></i>
-                    <input type="text" id="search-input" placeholder="Search ...">
+                    <input type="text" placeholder="Search ...">
+                </div>
+                <!-- Auth Section -->
+                <div class="auth-container">
+                    <!-- When not logged in -->
+                    <div id="guest-content">
+                    <a href="./signin.html" class="sign-in-btn">Sign in</a>
+                    <a href="./register.html" class="register-btn">Register</a>
+                    </div>
+                    <!-- When logged in -->
+                    <div id="logged-in-content" style="display: none;">
+                    <span id="welcome" class="welcome-text"></span>
+                    <button id="logout-btn" class="logout-btn">Sign out</button>
+                    </div>           
                 </div>
             </div>
-        </div>
     </header>
     <main>
         <section id="faq">
@@ -63,17 +73,21 @@
     <footer class="footer">
         <div class="footer-links">
             <a href="./faq.html">FAQ</a>
-            <a href="./ASL-translator.html">About Us</a>
-            <a href="#about-us">Contact Us</a>
+            <a href="#about-us">About Us</a>
+            <a href="./contact.html">Contact Us</a>
         </div>
         <section id="about-us">
             <h2 class="section-title">About Us</h2>
+            <div class="photos">
+                <img src="us1.jpg" alt="us1"/>
+            </div>
             <p>
                 We're two passionate software engineering students committed to using technology to bridge communication
                 gaps. With a shared interest in creating inclusive solutions, we've built this web app to make American
                 Sign Language more accessible and easier to learn for everyone. Our goal is to empower individuals
                 through innovation, making communication seamless for all.
             </p>
+            <img class="illustration" src="img7.jpg" alt="" />
         </section>
     </footer>
 
