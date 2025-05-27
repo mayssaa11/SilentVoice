@@ -21,19 +21,27 @@ div {
     width: 150px;
     height: auto;
     margin-bottom: 20px;
-    border-radius: 50%;
 }
 
 h1 {
-    font-size: 50px;
-    color: #0034b7;
+    font-size: 40px;
+    color: #03224c;
     margin: 10px 0;
-}
+}/*
+h1::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #03224c;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}*/
 
 p {
     font-family: cursive;
-    font-size: 26px;
-    color: #38bae1;
+    font-size: 22px;
+    color: #03224c;
     margin-top: 5px;
 }
 
@@ -48,7 +56,7 @@ p {
 .bubble {
     width: 15px;
     height: 15px;
-    background-color: #38bae1;
+    background-color: #03224c;
     border-radius: 50%;
     animation: pulse 1.5s infinite ease-in-out;
 }
